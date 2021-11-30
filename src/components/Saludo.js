@@ -6,14 +6,17 @@ const Saludo = ({ mensaje, subtitulo = 'soy un default prop' }) => {
     return (
         <>
             <h1>{mensaje}</h1>
-            <h1>{subtitulo}</h1>
+            <p>{subtitulo}</p>
         </>
     )
 }
 
+//el saludo es de tipo string
 Saludo.propTypes = {
     mensaje: PropTypes.string.isRequired
 }
+
+// es un props por default
 Saludo.defaultProps = {
     subtitulo: 'soy un default prop'
 }
