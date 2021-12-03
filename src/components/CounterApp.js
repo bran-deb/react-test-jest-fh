@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
+import { PropTypes } from 'prop-types'
 
-const CounterApp = () => {
+const CounterApp = ({ value = 10 }) => {
 
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(value)
 
     const handleAdd = () => setCounter(counter + 1)
     const handleRess = () => setCounter(counter - 1)
-    const reset = () => setCounter(0)
-
-
+    const reset = () => setCounter(value)
 
     return (
         <>
@@ -21,5 +20,8 @@ const CounterApp = () => {
     )
 }
 
+CounterApp.prototype = {
+    value: PropTypes.number
+}
 
 export default CounterApp;
