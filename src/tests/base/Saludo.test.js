@@ -3,7 +3,7 @@ import '@testing-library/jest-dom'
 // import { render } from "@testing-library/react"
 import Saludo from "../../components/Saludo"
 import { shallow } from 'enzyme'
-import { getByText } from '@testing-library/react'
+// import { getByText } from '@testing-library/react'
 
 describe('Pruebas en el componente <Saludo />', () => {
     // test('debe de mostrar el mensaje "hola soy goku"', () => {
